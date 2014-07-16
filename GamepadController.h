@@ -4,17 +4,18 @@ class GamepadController
 {
 
 public:
-	GamepadController(Drone_Socket_Manager*);
+	GamepadController(Multiple_Input_Devices*);
 	~GamepadController();
-	string get_Float_value_IEEE754(float);
 
 private:
-	Drone_Socket_Manager *_drone;
+	Multiple_Input_Devices *_multiple_Input_Devices;
 
-	string _command; //message a envoyer
+	int _input_type;
+
+	At_Command _command; //message a envoyer
 	XINPUT_STATE _state;
 	int _sequence_number; // correspond au numero de la commande envoyé au drone, le protocol UDP pouvant subir des pertes il ne faut pa
-	float _speed_drone;
+	int _speed_drone;
 
 	void checkInput();
 	void parseInput();

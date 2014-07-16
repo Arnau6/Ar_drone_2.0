@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="At_Command">
+    <Position X="0.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAIAAYAIoAEAAAAAAAAAAACQAAABAAAAgAAKAA=</HashCode>
+      <FileName>At_Command.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamepadController">
+    <Position X="3.25" Y="12.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAgEAIAAAAAAACAAAAAAAAIAAABAAgBAAAIA=</HashCode>
+      <FileName>GamepadController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeapMotion_Listener">
+    <Position X="0.5" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAIAAAAAAAABAABAAgAAIABQAAAAAAIIA=</HashCode>
+      <FileName>LeapMotion_Listener.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Multiple_Input_Devices">
+    <Position X="2.5" Y="7.25" Width="2" />
+    <Members>
+      <Field Name="isGamePadConnected" Hidden="true" />
+      <Field Name="isLeapmotionConnected" Hidden="true" />
+      <Field Name="last_automatic_command_ms" Hidden="true" />
+      <Field Name="last_command" Hidden="true" />
+      <Field Name="last_GamePad_command_ms" Hidden="true" />
+      <Field Name="last_global_command_ms" Hidden="true" />
+      <Field Name="last_Keyboard_command_ms" Hidden="true" />
+      <Field Name="last_LeapMotion_command_ms" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAEAAAgAAAIAlAAgAAAgAAAYAAAAESyAQCBAEIA=</HashCode>
+      <FileName>Multiple_Input_Devices.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NavData">
+    <Position X="8" Y="1.75" Width="2" />
+    <Members>
+      <Field Name="imageDown" Hidden="true" />
+      <Field Name="imageGamePad" Hidden="true" />
+      <Field Name="imagePitch" Hidden="true" />
+      <Field Name="imageRoll" Hidden="true" />
+      <Field Name="imageStick" Hidden="true" />
+      <Field Name="imageTurnLeft" Hidden="true" />
+      <Field Name="imageTurnRight" Hidden="true" />
+      <Field Name="imageUp" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAgAAYEBAAfAAgAAEgFAgAAAAAAAAAAAFAAAAMICBKA=</HashCode>
+      <FileName>NavData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Socket_Manager">
+    <Position X="6.75" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>JAIAAAgQgAAAAAQAAAAABAAABQCCAAAAAAABAAAA4Ag=</HashCode>
+      <FileName>Socket_Manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoManager">
+    <Position X="4" Y="0.75" Width="2" />
+    <Members>
+      <Field Name="_is_automatic_mouvement" Hidden="true" />
+      <Field Name="_is_detected_Faces" Hidden="true" />
+      <Field Name="_is_detected_HLS" Hidden="true" />
+      <Field Name="_is_Recording" Hidden="true" />
+      <Method Name="custom_frame" Hidden="true" />
+      <Method Name="find_faces" Hidden="true" />
+      <Field Name="fps" Hidden="true" />
+      <Field Name="fps_start" Hidden="true" />
+      <Field Name="frame_counter" Hidden="true" />
+      <Method Name="get_detected_faces" Hidden="true" />
+      <Method Name="get_imgNearestHead" Hidden="true" />
+      <Method Name="get_roi_NearestHead" Hidden="true" />
+      <Method Name="getFrameFromStream" Hidden="true" />
+      <Method Name="getHSL" Hidden="true" />
+      <Field Name="hls_ErrorMargin" Hidden="true" />
+      <Field Name="hls_hue" Hidden="true" />
+      <Field Name="hls_lightness" Hidden="true" />
+      <Field Name="hls_saturation" Hidden="true" />
+      <Method Name="isCorrectPath" Hidden="true" />
+      <Field Name="last_automatic_movement" Hidden="true" />
+      <Field Name="lastFrameWithDetection" Hidden="true" />
+      <Field Name="lastValidFrame" Hidden="true" />
+      <Field Name="latency_find_faces" Hidden="true" />
+      <Method Name="refresh_fps" Hidden="true" />
+      <Method Name="setIsDetectedFaces" Hidden="true" />
+      <Method Name="setPictureBox" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>MAIBQESABUAIYAgCAIEIAEgDYICCBISxolAAAAAEQYA=</HashCode>
+      <FileName>VideoManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="NAVDATA">
+    <Position X="9.75" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAACQAAACCAAAAAoAAAAAEAIQBAEAgAUAAAAAAAAE=</HashCode>
+      <FileName>NavData.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
